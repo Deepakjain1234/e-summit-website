@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
 
 * {
     margin: 0;
@@ -20,12 +20,15 @@ a {
 }
 .header{
     border-bottom: 1px solid #E2E8F0;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    background: url("/assets/image/Image\ 1.png");
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(3,64,100,0.5) ,rgba(3,64,100,0.5)),url("/assets/image/Image\ 1.png");
+}
+.homepage{
+    margin-bottom: 220px;
 }
 
 .navbar {
@@ -85,13 +88,14 @@ a {
         height: 120px;
     }
 
-    .navbar button {
+    .navbar button{
         color: white;
         background-color: orangered;
         padding: 11px 41px;
         font-size: 16px;
         margin: 0px 39px;
- 
+        border: 0;
+        cursor: pointer;
     } 
 .homepage
 {
@@ -150,6 +154,46 @@ a {
     color: orangered;
     font-size: 56px;
 }
+/* About */
+
+.about-us{
+    margin-top: 25px;
+}
+.inner-about{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.left-about{
+    font-size: 3rem;
+    width: 70%;
+    padding: 80px;
+}
+.head-about{
+    display: flex;
+    justify-content: center;
+    margin: 30px 2px;
+}
+.head-about span{
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+.text-about{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2.6rem;
+}
+.btn-about button {
+    color: white;
+    background-color: orangered;
+    padding: 11px 41px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+} 
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
