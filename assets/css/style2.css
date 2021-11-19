@@ -220,41 +220,6 @@ a {
 }
 /* Speakers */
 
-
-.event-slider
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(rgba(3,64,100,0.5) ,rgba(3,64,100,0.5)),url("/assets/image/footer.png");
-}
-.inner-slider
-{
-    width: 100%;
-}
-.slider-head
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slider-head h1
-{
-    font-size: 40px;
-    font-weight: 500;
-    margin: 30px 0px;
-    color: white;
-    text-align: center;
-}
-.main-slider
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-}
 .flickity-enabled.is-draggable{
     margin-top: 70px;
 }
@@ -278,7 +243,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    padding-bottom: 30px;
     background-image: linear-gradient(rgba(3,64,100,0.5) ,rgba(3,64,100,0.5)),url("/assets/image/footer.png");
 }
 .inner-slider
@@ -402,6 +367,65 @@ a {
 }
 
 
+.states
+{
+    width: 100%;background-image: linear-gradient(rgba(3,64,100,0.5) ,rgba(3,64,100,0.5)),url("/assets/image/spiderman\ banner.png");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-states {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    flex-wrap: wrap;
+}
+.states-second
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.states-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.states-box i
+{
+    font-size: 35px;
+    margin: 9px 2px;
+}
+.state-upper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.states-box h1{
+    font-size: 35px;
+}
+.states-box p
+{
+    font-size: 15px;
+    margin: 9px 2px;
+}
+.state-upper
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+#join-event img{
+    height: 600px;
+}
 @media only screen and (max-width: 1366px) {
     .nav-menu {
         position: fixed;
@@ -484,6 +508,9 @@ a {
     .main-slider h3{
         font-size: 3.5rem;
     }
+    .head-about h3{
+        font-size: 2.5rem;
+    }
 }
 @media only screen and (max-width: 500px){
     .heading-2 h1{
@@ -494,8 +521,9 @@ a {
     }
     .left-about{
         padding: 25px;
+        text-align: -webkit-center;
     }
     .head-about h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
