@@ -1,0 +1,167 @@
+html
+{
+    margin: 0px;
+}
+body
+{
+    margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
+
+.hackathon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(3,64,100,0.5) ,rgba(3,64,100,0.5)),url(/assets/image/doctor\ strange.png);
+}
+.inner-hack
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.event-sponsor
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: left;
+ align-items: flex-start;
+}
+
+.logo-box {
+    background-color: #fff2f2;
+    margin: 0px 22px;
+    margin-top: 12px;
+    padding: 0px 34px;
+    border-radius: 8px;
+}
+.logo-box2 {
+    background-color: #fff2f2;
+    margin: 0px 22px;
+    margin-top: 4px;
+    font-size: 10px;
+    padding: 1px 34px;
+    border-radius: 8px;
+}
+.inner-event-sponsor
+{
+    margin-right: 150px;
+}
+
+.event-sponsor h1 {
+    color: tomato;
+    margin: 0px 23px;
+    font-size: 28px;
+}
+.event-sponsor2 h1 {
+    color: tomato;
+    margin: 0px 23px;
+    font-size: 22px;
+}
+.event-sponsor2
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: right;
+ align-items: flex-end;
+}
+.hackathon-head h1
+{
+    font-size: 191px;
+    margin: 12px;
+    color: white;
+}
+.about-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.inner-about
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about1 {
+    /* width: 85%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.about-head
+{
+    background-color: rgb(250, 102, 33);
+    display: flex;
+    justify-content: center;
+    width: 38%;
+    align-items: center;
+    transform: skew(-30deg);
+    margin-left: 28px;
+    margin-bottom: 19px;
+    z-index: 234;
+    /* position: absolute; */
+}
+.about-head::before {
+    content: " ";
+    border: 2px solid black;
+    height: 50px;
+    width: 499px;
+    position: absolute;
+    left: 38px;
+    bottom: 12px;
+    z-index: -1;
+}
+.about-head2
+{
+    background-color: rgb(250, 102, 33);
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+    transform: skew(-30deg);
+    margin-left: 28px;
+    margin-bottom: 19px;
+}
+.about-head h1
+{
+    transform: skew(30deg);
+    margin: 12px 0px;
+    font-size: 25px;
+}
+.about-head2 h1
+{
+    transform: skew(30deg);
+    margin: 12px 0px;
+    font-size: 25px;
+}
+.registration
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.registration button {
+    background-color: rgb(250, 102, 33);
+    padding: 18px 57px;
+    font-size: 30px;
+    border: none;
+}
