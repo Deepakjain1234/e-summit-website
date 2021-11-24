@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-summit | Ecellnitb</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/5ee2cb3094.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
@@ -15,6 +15,78 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<style>
+    .container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #ff4500;
+    z-index: 1;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #ff4500;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #ff4500;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #F6D155;
+    border: 2px solid #ff4500;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff4500;
+    z-index: 1;
+}
+
+.container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ff4500;
+}
+</style>
 
 <body>
     <header class="header">
@@ -122,7 +194,7 @@
                         <div class="orange-box">
                             <h1> Startup Expo</h1>
                             <img src="assets/image/ironman.png" alt="">
-                            <button>Register</button>
+                            <a href="startup.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -130,7 +202,7 @@
                         <div class="orange-box">
                             <h1> Hackathon</h1>
                             <img src="assets/image/spiderman.png" alt="">
-                            <button>Register</button>
+                            <a href="hackathon.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -138,7 +210,7 @@
                         <div class="orange-box">
                             <h1> IPL Auction</h1>
                             <img src="assets/image/thor event.png" alt="">
-                            <button>Register</button>
+                            <a href="ipl.html"><button>Register</button></a>   
                         </div>
                     </div>
 
@@ -146,7 +218,7 @@
                         <div class="orange-box">
                             <h1>Content Conclave</h1>
                             <img src="assets/image/dr. strange event.png" alt="">
-                            <button>Register</button>
+                            <a href="content.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -154,7 +226,7 @@
                         <div class="orange-box">
                             <h1>Workshops</h1>
                             <img src="assets/image/nick-fury workshop.png" alt="">
-                            <button>Register</button>
+                            <a href="wokshop.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -162,7 +234,7 @@
                         <div class="orange-box">
                             <h1>Stock Trading</h1>
                             <img src="assets/image/loki event.png" alt="">
-                            <button>Register</button>
+                            <a href="stock.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -170,7 +242,7 @@
                         <div class="orange-box">
                             <h1>Business Plan</h1>
                             <img src="assets/image/about.png" alt="">
-                            <button>Register</button>
+                            <a href="bplan.html"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -178,7 +250,7 @@
                         <div class="orange-box">
                             <h1>Crypto Trading</h1>
                             <img src="assets/image/black panther event.png" alt="">
-                            <button>Register</button>
+                            <a href="crypto.html"><button>Register</button></a>  
                         </div>
                     </div>
                     
@@ -193,7 +265,7 @@
             <div class="speaker-heading">
 
                 <img src="assets/image/Group 5.png" alt="">
-                <h1>Sponsor & Partners</h1>
+                <h1>Speaker</h1>
             </div>
 
             <div class="speaker-main">
@@ -377,8 +449,8 @@
         <div class="timeline">
             <div class="container left">
               <div class="date">5 Dec</div>
-              <i class="icon fa fa-home"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-home"></i>
+              <div class="content" style="background: #d7dddb;">
                 <h2>Workshops</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -387,8 +459,8 @@
             </div>
             <div class="container right">
               <div class="date">22 Oct</div>
-              <i class="icon fa fa-gift"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-gift"></i>
+              <div class="content" style="background: #d7dddb;" >
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -397,8 +469,8 @@
             </div>
             <div class="container left">
               <div class="date">10 Jul</div>
-              <i class="icon fa fa-user"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-user"></i>
+              <div class="content" style="background: #d7dddb;">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -407,8 +479,8 @@
             </div>
             <div class="container right">
               <div class="date">18 May</div>
-              <i class="icon fa fa-running"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-running"></i>
+              <div class="content" style="background: #d7dddb;">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -417,8 +489,8 @@
             </div>
             <div class="container left">
               <div class="date">10 Feb</div>
-              <i class="icon fa fa-cog"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-cog"></i>
+              <div class="content" style="background: #d7dddb;">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -427,8 +499,8 @@
             </div>
             <div class="container right">
               <div class="date">01 Jan</div>
-              <i class="icon fa fa-certificate"></i>
-              <div class="content">
+              <i style=" background: white;" class="icon fa fa-certificate"></i>
+              <div class="content" style="background: #d7dddb;">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                   Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
@@ -439,7 +511,7 @@
 
     </section>
 
-    <section class="sponsor">
+    <!-- <section class="sponsor">
         <div class="inner-sponsor">
             <div class="sponsor-heading">
 
@@ -509,7 +581,7 @@
                 </div>
 
             </div>
-    </section>
+    </section> -->
 
     <section class="blast-past">
         <div class="inner-past">

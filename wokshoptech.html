@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
+    <title>Technical-Workshop</title>
     <link rel="stylesheet" href="assets/css/event.css">
     <script src="https://kit.fontawesome.com/5ee2cb3094.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="hackathon" id="hack">
+    <section class="hackathon" id="workshop">
         <div class="inner-hack">
             <!-- <div class="event-sponsor">
                 <div>
@@ -23,7 +23,7 @@
             </div> -->
 
             <div class="hackathon-head">
-                <h1>HACKATHON</h1>
+                <h1>WORKSHOP</h1>
             </div>
             <!-- <div class="event-sponsor2">
                 <div class="inner-event-sponsor">
@@ -35,6 +35,10 @@
                     </div>
                 </div>
             </div> -->
+
+            <div class="home-register">
+                <button id="scroll-btn">Register</button>
+            </div>
 
         </div>
 
@@ -179,17 +183,15 @@
         </div>
     </section>
 
-</section>
-<section class="registration">
-    <div class="inner-registration">
-        <div>
-            <button>REGISTRATION COMING SOOON</button>
+    <!-- <section class="registration">
+        <div class="inner-registration">
+            <div>
+                <button>REGISTER NOW</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section> -->
 
-
-    <!-- <section class="reg-form">
+    <section class="reg-form" id="reg">
         <div class="inner-reg">
             <div class="form-left">
                 <img src="assets/image/E-SUMMIT LOGO avengers theme new.png" alt="">
@@ -223,13 +225,13 @@
                     <label for="Email">Email</label>
                     <input type="email">
     
-                    <label for="exp">How much knowledge do you have about entrepreneurship</label>
+                    <!-- <label for="exp">How much knowledge do you have about entrepreneurship</label>
                     <select id="exp" name="exp">
                       <option value="Beginner">Beginner</option>
                       <option value="Intermediate">Intermediate</option>
                       <option value="Advanced">Advanced</option>
                       <option value="other">other</option>
-                    </select>
+                    </select> -->
                     <label for="qna">Questions/topics you want to ask from our speakers</label>
                     <input type="text">
                     
@@ -240,7 +242,18 @@
             </div>
         </div>
 
-    </section> -->
+    </section>
+
+    <script>
+        document.getElementById("scroll-btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("reg").scrollIntoView(true, {
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+});
+    </script>
 
 </body>
 
