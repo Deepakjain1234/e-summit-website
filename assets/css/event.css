@@ -2,6 +2,15 @@ html
 {
     margin: 0px;
 }
+p
+{
+    text-align: justify;
+}
+a
+{
+    text-decoration: none;
+    color: #ff7300;
+}
 body
 {
     margin: 0px;
@@ -162,7 +171,9 @@ body
 .about-section p
 {
     text-align: justify;
+    font-size: 18px;
 }
+
 .inner-about
 {
     width: 85%;
@@ -877,8 +888,127 @@ body
     right:10px;
   }
 
-  
 
+
+  .speaker-box
+  {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      padding: 20px 0px;
+
+  }
+  .speaker-box h3
+  {
+      color: #ff7300;
+      font-size: 24px;
+  }
+  .speaker-box img
+  {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+  }
+
+  .speaker-box1
+  {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      padding: 20px 0px;
+
+  }
+  .speaker-box1 h3
+  {
+      color: #ff7300;
+      font-size: 24px;
+      
+  }
+  .speaker-box1 img
+  {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+  }
+  .speaker-left {
+    width: 80%;
+    text-align: justify;
+}
+ 
+  
+  .speaker-right
+  {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  @media only screen and (max-width: 850px)
+  {
+    .speaker-box
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 18px;
+        padding: 20px 0px;
+        align-items: center;
+      
+  
+    }
+
+    .speaker-box1
+  {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      padding: 20px 0px;
+      align-items: center;
+
+  }
+
+  .speaker-left
+  {
+      width: 80%;
+      
+
+  }
+  
+  .speaker-right
+  {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #speaker-sec
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  }
+
+  @media only screen and (max-width: 450px)
+  {
+    .speaker-left
+    {
+        width: 95%;
+    }
+    .speaker-right
+  {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .speaker-box img {
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+}
+  }
 
 
   
