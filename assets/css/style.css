@@ -1582,6 +1582,15 @@ a {
 
 @media only screen and (max-width: 500px)
 {
+
+    .gallery-cell {
+        /* width: 300px; */
+        
+        /* height: 300px; */
+        margin-right: 10px;
+        background: none;
+        /* counter-increment: gallery-cell; */
+      }
     .navbar img {
         height: 73px;
     }
@@ -1895,7 +1904,7 @@ a {
 
 .timelines
 {
-    padding: 50px 2px;
+    /* padding: 50px 2px; */
 }
 
 .timeline {
@@ -2078,4 +2087,15 @@ a {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
   }
+}
+
+.white-box1 img
+{
+    height: 100%;
+    width: 100%;
+}
+.white-box img
+{
+    height: 100%;
+    width: 100%;
 }
