@@ -1,3 +1,5 @@
+<?php include 'include/db.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +10,7 @@
     <title>Workshops</title>
     <link rel="stylesheet" href="/assets/css/event.css">
     <script src="https://kit.fontawesome.com/5ee2cb3094.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -251,20 +254,20 @@
             <div class="form-right">
 
                 <h1>Register</h1>
-                <form action="">
+                <form method="POST" action="">
                     <label for="name">Name</label>
-                    <input type="text">
+                    <input type="text" name="name">
                     <label for="Email">Email</label>
-                    <input type="email">
+                    <input type="email" name="email">
                     <label for="number">Whatsapp Number</label>
-                    <input type="number">
+                    <input type="number" name="number">
                     <label for="collage">College</label>
-                    <input type="text">
+                    <input type="text" name="college">
 
                     <!-- <label for="Branch">Branch</label>
                     <input type="text"> -->
                     <label for="Year">Year</label>
-                    <select id="Year" name="Year">
+                    <select id="Year" name="year">
                         <option value="First">First</option>
                         <option value="Second">Second</option>
                         <option value="Third">Third</option>
@@ -273,7 +276,7 @@
                     </select>
 
                     <label for="Course">Course</label>
-                    <input type="text">
+                    <input type="text" name="course">
 
 
 
@@ -286,9 +289,9 @@
                         <!-- <option value="other">other</option> -->
                     </select>
                     <label for="qna">Questions/topics you want to ask from our speakers</label>
-                    <input type="text">
+                    <input type="text" name="ques">
 
-                    <input type="submit" id="submit-btn">
+                    <input type="submit" id="submit-btn" name="submit">
 
 
                 </form>
@@ -311,3 +314,35 @@
 </body>
 
 </html>
+
+
+<?php
+    if(isset($_POST['submit']))
+    {
+        $name = mysqli_escape_string($connection, $_POST['name']);
+        $email = mysqli_escape_string($connection, $_POST['email']);
+        $number = mysqli_escape_string($connection, $_POST['number']);
+        $college = mysqli_escape_string($connection, $_POST['college']);
+        $year = mysqli_escape_string($connection, $_POST['year']);
+        $course = mysqli_escape_string($connection, $_POST['course']);
+        $exp = mysqli_escape_string($connection, $_POST['exp']);
+        $ques = mysqli_escape_string($connection, $_POST['ques']);
+
+
+        $query = "INSERT INTO workshop (name, email, number, college, year, course, exp, ques)";
+
+        $query .= "VALUES('{$name}', '{$email}', '{$number}', '{$college}', '{$year}', '{$course}', '{$exp}', '{$ques}')";
+
+        $update_file = mysqli_query($connection, $query);
+        if(!$update_file)
+        {
+            die("Failed to update ".mysqli_error($connection));
+        }
+        elseif($update_file)
+        {
+            ?>
+            <script>swal("Good job!", "You are sucessfully registered", "success")</script>
+            <?php
+        }
+    }
+?>
